@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: green;">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="img-logo" src="./alifjumalogo.jpg" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- ✅ Faqat bitta nav list -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Home -->
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="./about.html">Biz haqimizda</a>
+              </li>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- Dropdown: Katalog -->
+              <li class="nav-item dropdown">
+                <a style="color: green; " class="nav-link dropdown-toggle katalog" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Katalog
+                  </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#kiyimlar">Kiyimlar</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#uy-buyumlari">Uy-buyumlari</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#texnikalar">Texnikalar</a></li>
+                </ul>
+              </li>
+            </ul>
+      
+            <!-- Qidiruv -->
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Qidiruv..." aria-label="Search">
+              <button class="btn btn-outline-danger" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+      
+            <!-- Kirish -->
+            <form class="d-flex ms-3">
+              <button class="btn btn-outline-warning" type="submit">Kirish</button>
+            </form>
+          </div>
+        </div>
+      </nav> 
+      <br><br>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+      
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./kiyimchegirma.png" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./uybuyumchegirma.png" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./iphonechegirma.png" class="d-block w-100 img-fluid" alt="...">
+          </div>
+        </div>
+      
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+      
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>   
+      <br><br>  
+      
+      <a href="./index.html" style="margin-left: 75px; color: white; text-decoration: none; font-size: 36px;">Kiyimlar ></a>
+
+      <div id="kiyimlar" class="card-group">
+        <div class="card">
+          <img src="https://buka.uz/wp-content/uploads/2020/11/synt_grey-2.jpg" class="card-img-top" alt="">
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">BUKA boxing</h5><br>
+            <h5 class="text-primary">125 000 so'm</h5><br>
+            <p class="card-text">Futbolka BUKA Cool, CoolTech texnologiyasi bilan, Material: 100% paxta</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-warning">Sotib olish</button>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://olcha.uz/image/700x700/products/supplier/stores/1/2023-05-02/0e3hdPrY1tM7CrTQo8nVxLtOxYzuNI9wu0iNHMS1TGxDcblOXyzyq8puHRau.jpg" class="card-img-top" alt="">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">ZLSHIJIA</h5><br>
+              <h5 class="text-primary">570 000 so'm</h5><br>
+              <p class="card-text">Futbolka BUKA Cool, CoolTech texnologiyasi bilan, Material: 100% paxta</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-warning">Sotib olish</button>
+            </div>
+          </div>
+        <div class="card">
+            <img src="https://admin.di-sport.uz/storage/thumbnails/galleries/19999/tvIFdXenOKw1ogEoVOJOxI7K8t1uz3bwvX8XQ8zT-large.webp" class="card-img-top" alt="">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">Nike Dry Park 20 to'plami</h5><br>
+              <h5 class="text-primary">618 000 so'm</h5><br>
+              <p class="card-text">Nike Dry-FIT Park to'plami bolalar futbol to'plami - o'yin vaqtida qulay va quruq qoling</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-warning">Sotib olish</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://images.uzum.uz/d0sn9lj3uvph50a0gi80/original.jpg" height="319px" class="card-img-top" alt="">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">Klassik erkaklar ko'ylagi</h5><br>
+              <h5 class="text-primary">119 000 so'm</h5><br>
+              <p class="card-text">Klassik erkaklar ko'ylagi, asosiy, paxta, katta o'lchamli, 2 o'lcham kichik</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-warning">Sotib olish</button>
+            </div>
+          </div>
+      </div>
+      <div id="kiyimlar" class="card-group">
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/71OVF-5brAL._AC_SL1500_.jpg" height="319px" class="card-img-top" alt="">
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">GORGLITTER</h5><br>
+            <h5 class="text-primary">660 000 so'm</h5><br>
+            <p class="card-text">GORGLITTER 2 qismli erkaklar kiymi ustki ko'ylak va past shortilar to'plami.</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-warning">Sotib olish</button>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://images.uzum.uz/d1i3i96ojia34bc02pig/original.jpg" height="319px" class="card-img-top" alt="">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">Futbolka va shim</h5><br>
+              <h5 class="text-primary">198 000 so'm</h5><br>
+              <p class="card-text">Futbolka va shim, erkaklar kiyimlari kolleksiyasi</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-warning">Sotib olish</button>
+            </div>
+          </div>
+        <div class="card">
+            <img src="https://admin.di-sport.uz/storage/galleries/16744/7aNUtCB5Z9KTYTKWG63wGgfap3jRwyjw7oR92VgV.webp" class="card-img-top" alt="">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">DC Court</h5><br>
+              <h5 class="text-primary">615 000 so'm</h5><br>
+              <p class="card-text">DC Court krossovkalari</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-warning">Sotib olish</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://admin.di-sport.uz/storage/thumbnails/galleries/14836/de44hqnS2U1Feh1WYboApcJphGhaqJedajJ2EfOe-large.webp" class="card-img-top" alt="">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">Boss</h5><br>
+              <h5 class="text-primary">628 000 so'm</h5><br>
+              <p class="card-text">Kepka Boss</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-warning">Sotib olish</button>
+            </div>
+          </div>
+      </div>
+
+
+      <a href="./index.html" style="margin-left: 75px; color: white; text-decoration: none; font-size: 36px;">Uy-buyumlar ></a>
+
+      <div id="uy-buyumlari" class="card-group">
+        <div class="card">
+          <img src="https://mionline.uz/image/cache/webp/catalog/0001/005/resize1-1-1300x1300.webp" height="319px" class="card-img-top" alt="">
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">Blender</h5><br>
+            <h5 class="text-primary">1 190 000 so'm</h5><br>
+            <p class="card-text">Xiaomi Blender (qora)</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-warning">Sotib olish</button>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://mionline.uz/image/cache/webp/catalog/0001/00001/0001/002/hu0158-1-1300x1300.webp" height="319px" alt="">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">HuoHou german po'lat pichoq</h5><br>
+              <h5 class="text-primary">1 195 000 so'm</h5><br>
+              <p class="card-text">Xiaomi HuoHou german po'lat pichoq to'plami 6 ta element</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-warning">Sotib olish</button>
+            </div>
+          </div>
+        <div class="card">
+            <img src="https://mionline.uz/image/cache/webp/catalog/test/002/005/601f3c210be6a53e0b87f64eb56999b2-1300x1300.webp" height="319px" class="card-img-top" alt="">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">Xiaomi krujka</h5><br>
+              <h5 class="text-primary">169 000 so'm</h5><br>
+              <p class="card-text">Xiaomi Fiu Elegant dumalamang oq termosli krujka</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-warning">Sotib olish</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://avatars.mds.yandex.net/get-mpic/4113189/2a00000195c683f79fbd20f47d21273359f6/optimize" height="319px" class="card-img-top" alt="">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">Kukmara Granit idish</h5><br>
+              <h5 class="text-primary">306 850 so'm</h5><br>
+              <p class="card-text">Kukmara Granit idish, olinadigan tutqichli, AP liniyasi, 240 mm</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-warning">Sotib olish</button>
+            </div>
+          </div>
+      </div>
+
+      <div id="uy-buyumlari" class="card-group">
+        <div class="card">
+          <img src="https://images.uzum.uz/ct7g7e5pb7f7ago6thb0/original.jpg" height="319px" class="card-img-top" alt="Changyutkich Artel VCB-2220">
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">Changyutkich Artel VCC-0220</h5><br>
+            <h5 class="text-primary">1 399 000 so‘m</h5><br>
+            <p class="card-text">2200W quvvat, HEPA filtri bilan, kuchli va ishonchli changyutkich.</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-warning">Sotib olish</button>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://images.uzum.uz/d18gm0on274lpu39q1p0/original.jpg" height="319px" class="card-img-top" alt="Havo namlagich Deerma F600">
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">Havo namlagich Deerma F600</h5><br>
+            <h5 class="text-primary">599 000 so‘m</h5><br>
+            <p class="card-text">5 litrli suv sig‘imi, jim ishlaydi, havo sifatini yaxshilaydi.</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-warning">Sotib olish</button>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://images.uzum.uz/conrmcfj2e4ghqnp65i0/original.jpg" height="319px" class="card-img-top" alt="Philips dazmol">
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">Dazmol Philips GC1750/20</h5><br>
+            <h5 class="text-primary">439 000 so‘m</h5><br>
+            <p class="card-text">Bug’li dazmol, sirg‘almas taglik, qulay suv quyish imkoniyati bilan.</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-warning">Sotib olish</button>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://images.uzum.uz/d228dn52llnbjcofvk2g/original.jpg" height="319px" class="card-img-top" alt="Elektr choynak Artel">
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">Elektr choynak Artel ART-KE-1720</h5><br>
+            <h5 class="text-primary">209 000 so‘m</h5><br>
+            <p class="card-text">1.7 litr sig‘im, zanglamaydigan po‘lat, avtomatik o‘chish bilan.</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-warning">Sotib olish</button>
+          </div>
+        </div>
+      
+      </div>
+      
+
+
+      <a href="./index.html" style="margin-left: 75px; color: white; text-decoration: none; font-size: 36px;">Texnikalar ></a>
+
+      <div id="texnikalar" class="card-group">
+        <div class="card">
+          <img src="https://cdn0.it4profit.com/s3size/rt:fill/w:900/h:900/g:no/el:1/f:webp/plain/s3://cms/product/64/f5/64f592c4d253c22943ea64d63721eedb/250331120300877100.webp" height="319px" class="card-img-top" alt="">
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">Iphone 16 pro max</h5><br>
+            <h5 class="text-primary">23 720 000</h5><br>
+            <p class="card-text">iPhone 16 Pro Max 1TB (1 SIM) Natural Titanium</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-warning">Sotib olish</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.uzum.uz/crtuksksslojjk5qnnp0/original.jpg" height="319px" class="card-img-top" alt="ASUS VivoBook 15">
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">ASUS VivoBook 15</h5><br>
+            <h5 class="text-primary">6 499 000 so‘m</h5><br>
+            <p class="card-text">Intel Core i5, 8 GB RAM, 512 GB SSD, 15.6" Full HD noutbuk.</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-warning">Sotib olish</button>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://images.uzum.uz/csvul3r4nkdilc6c3dbg/original.jpg" height="319px" class="card-img-top" alt="Samsung Smart TV 50 inch">
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">Samsung 50" UHD Smart TV</h5><br>
+            <h5 class="text-primary">5 999 000 so‘m</h5><br>
+            <p class="card-text">4K UHD, HDR, Smart TV, Wi-Fi bilan jihozlangan televizor.</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-warning">Sotib olish</button>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://images.uzum.uz/d0q3v427s4fo7mqavj8g/original.jpg" height="319px" class="card-img-top" alt="Artel konditsioner">
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">Konditsioner Artel 12HF</h5><br>
+            <h5 class="text-primary">3 450 000 so‘m</h5><br>
+            <p class="card-text">12000 BTU, sovutish va isitish funksiyali energiya tejamkor model.</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-warning">Sotib olish</button>
+          </div>
+        </div>
+      </div>
+      <div id="texnikalar" class="card-group">
+        <div class="card">
+          <img src="https://images.uzum.uz/csq5dcjvgbkpg1nm0060/original.jpg" height="319px" class="card-img-top" alt="LG kir yuvish mashinasi">
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">LG Kir yuvish mashinasi 6.5 kg</h5><br>
+            <h5 class="text-primary">4 300 000 so‘m</h5><br>
+            <p class="card-text">Bug' bilan tozalash, inverter motor, jim va samarali yuvish.</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-warning">Sotib olish</button>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://images.uzum.uz/cpckq2scrcfqljg19a5g/original.jpg" height="319px" class="card-img-top" alt="Samsung xolodilnik RT46">
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">Samsung RT46 Xolodilnik</h5><br>
+            <h5 class="text-primary">6 700 000 so‘m</h5><br>
+            <p class="card-text">360 L, Twin Cooling, energiya tejamkor va keng sig‘imli model.</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-warning">Sotib olish</button>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://images.uzum.uz/d1cl4ki7s4fup34b9qbg/original.jpg" height="319px" class="card-img-top" alt="Infinix Hot 50">
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">Infinix Hot 50 8+8/256GB</h5><br>
+            <h5 class="text-primary">1 699 000 so‘m</h5><br>
+            <p class="card-text">6.78" ekran, 8+8GB RAM, 128GB xotira, 5000 mAh akkumulyator, Android 14.</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-warning">Sotib olish</button>
+          </div>
+        </div>
+        
+      
+        <div class="card">
+          <img src="https://images.uzum.uz/ct2mjfr4nkdilc6cspk0/original.jpg" height="319px" class="card-img-top" alt="Samsung mikroto‘lqinli pech">
+          <hr>
+          <div class="card-body">
+            <h5 class="card-title">Samsung Mikroto‘lqinli Pech</h5><br>
+            <h5 class="text-primary">1 299 000 so‘m</h5><br>
+            <p class="card-text">23 litr, avtomatik pishirish, oq rangli zamonaviy model.</p>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-warning">Sotib olish</button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="text-light pt-4 mt-5">
+        <br><br>
+        <div class="container">
+          <div class="row">
+      
+            <!-- Alif Juma haqida -->
+            <div class="col-md-4 mb-4">
+              <h5 class="text-warning">Alif Juma</h5>
+              <p>Har juma eng yaxshi chegirmalar bilan kiyim, texnika va uy buyumlari siz uchun!</p>
+            </div>
+      
+            <!-- Havolalar -->
+            <div class="col-md-4 mb-4">
+              <h5 class="text-warning">Foydali havolalar</h5><br>
+              <ul class="list-unstyled">
+                <li><a href="#kiyimlar" class="text-decoration-none text-light">Kiyimlar</a></li><br>
+                <li><a href="#uy-buyumlari" class="text-decoration-none text-light">Uy buyumlari</a></li><br>
+                <li><a href="#texnikalar" class="text-decoration-none text-light">Texnikalar</a></li><br>
+                <li><a href="./about.html" class="text-decoration-none text-light">Biz haqimizda</a></li><br>
+              </ul>
+            </div>
+      
+            <!-- Aloqa -->
+            <div class="col-md-4 mb-4">
+              <h5 class="text-warning">Biz bilan aloqa</h5><br>
+              <p><i class="fa-solid fa-phone"></i> +998 94 103 20 26</p>
+              <p><i class="fa-solid fa-envelope"></i> info@alifjuma.uz</p>
+              <p><i class="fa-solid fa-location-dot"></i> Toshkent, O‘zbekiston</p>
+            </div>
+          </div>
+      
+          <hr class="border-secondary">
+          <div class="text-center pb-3">
+            <p class="mb-0">&copy; 2025 <strong>Alif Juma</strong>. Barcha huquqlar himoyalangan.</p>
+          </div>
+        </div>
+      </footer>      
+</body>
+</html>

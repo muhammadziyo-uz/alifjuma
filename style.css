@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.img-logo{
+    width: 120px;
+}
+nav{
+    background-color: #17ac17;
+}
+.katalog{
+    background-color: white;
+    border-radius: 10px;
+}
+.carousel-inner {
+    max-height: 500px; /* yoki siz xohlagan balandlik */
+    max-width: 1400px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-group{
+    padding: 50px;
+}
+.card{
+    margin: 20px;
+    padding: 5px;
+    transition: transform 0.3s ease;
+    border-radius: 30px;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+footer{
+    background-color: #17ac17;
+}
