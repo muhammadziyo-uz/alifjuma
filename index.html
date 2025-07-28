@@ -46,12 +46,12 @@
             </ul>
       
             <!-- Qidiruv -->
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Qidiruv..." aria-label="Search">
+            <form class="d-flex search-form">
+              <input class="form-control me-2" type="search" placeholder="Qidiruv..." aria-label="Search" />
               <button class="btn btn-outline-danger" type="submit">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
-            </form>
+            </form>            
       
             <!-- Kirish -->
             <form class="d-flex ms-3">
@@ -97,7 +97,7 @@
       </div>   
       <br><br>  
       
-      <a href="./index.html" style="margin-left: 75px; color: white; text-decoration: none; font-size: 36px;">Kiyimlar ></a>
+      <a href="./index.html" id="kiyimlar" style="margin-left: 75px; color: white; text-decoration: none; font-size: 36px;">Kiyimlar ></a>
 
       <div id="kiyimlar" class="card-group">
         <div class="card">
@@ -201,7 +201,7 @@
       </div>
 
 
-      <a href="./index.html" style="margin-left: 75px; color: white; text-decoration: none; font-size: 36px;">Uy-buyumlar ></a>
+      <a href="./index.html" id="uy-buyumlar" style="margin-left: 75px; color: white; text-decoration: none; font-size: 36px;">Uy-buyumlar ></a>
 
       <div id="uy-buyumlari" class="card-group">
         <div class="card">
@@ -311,7 +311,7 @@
       
 
 
-      <a href="./index.html" style="margin-left: 75px; color: white; text-decoration: none; font-size: 36px;">Texnikalar ></a>
+      <a href="./index.html" id="texnikalar" style="margin-left: 75px; color: white; text-decoration: none; font-size: 36px;">Texnikalar ></a>
 
       <div id="texnikalar" class="card-group">
         <div class="card">
@@ -456,6 +456,56 @@
             <p class="mb-0">&copy; 2025 <strong>Alif Juma</strong>. Barcha huquqlar himoyalangan.</p>
           </div>
         </div>
-      </footer>      
+      </footer> 
+
+      <!-- Body oxirida (</body> tepasiga) qo‘shiladi -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Tepaga chiqish">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+      
+      <script>
+        // Tepaga chiqish tugmasini ko‘rsatish
+        window.onscroll = function () {
+          const btn = document.getElementById("scrollTopBtn");
+          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            btn.style.display = "block";
+          } else {
+            btn.style.display = "none";
+          }
+        };
+        
+        // Tepaga silliq chiqish
+        function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // Qidiruv orqali bo‘limlarga o'tish
+        document.querySelector('.search-form').addEventListener('submit', function (e) {
+          e.preventDefault();
+          const value = this.querySelector('input[type="search"]').value.toLowerCase().trim();
+        
+          const mapping = {
+            'kiyim': 'kiyimlar',
+            'kiyimlar': 'kiyimlar',
+            'uy': 'uy-buyumlari',
+            'uy buyumlari': 'uy-buyumlari',
+            'uy-buyumlari': 'uy-buyumlari',
+            'texnika': 'texnikalar',
+            'texnikalar': 'texnikalar',
+            'maishiy texnika': 'texnikalar'
+          };
+        
+          for (let key in mapping) {
+            if (value.includes(key)) {
+              const section = document.getElementById(mapping[key]);
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              }
+              break;
+            }
+          }
+        });
+        </script>        
 </body>
 </html>
